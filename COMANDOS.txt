@@ -1,0 +1,6 @@
+pip freeze > requirements.txt
+git push heroku master
+heroku login
+heroku run python manage.py migrate
+heroku config:set DISABLE_COLLECTSTATIC=1 --> BUSCAR QUE HICE
+heroku git:remote -a finalprojectgj
